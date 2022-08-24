@@ -11,3 +11,6 @@ Cargo.lock
 
 # MSVC Windows builds of rust generate these, which store debugging information
 *.pdb
+
+# IntelliJ stuff
+.idea/
