@@ -57,6 +57,7 @@ mod tests {
 
     // Tests run in their own thread, when a thread fails the test is failed
     // IE: when that thread panics.
+    #[ignore]
     #[test]
     fn another() {
         panic!("Make this test fail");
@@ -97,6 +98,7 @@ mod tests {
         assert_eq!(4, add_two(2));
     }
 
+    #[ignore]
     #[test]
     fn greeting_contains_name() {
         let result = greeting("Carol");
@@ -114,6 +116,7 @@ mod tests {
     }
 
     // this test should fail because this will not panic
+    #[ignore]
     #[test]
     #[should_panic]
     fn less_than_100 () {
@@ -124,7 +127,7 @@ mod tests {
     // is expected use assert!(value.is_err())
     #[test]
     fn it_works() -> Result<(), String> {
-        if 2 + 2 = 4{
+        if 2 + 2 == 4 {
             Ok(())
         } else {
             Err(String::from("two plus two does not equal four"))
